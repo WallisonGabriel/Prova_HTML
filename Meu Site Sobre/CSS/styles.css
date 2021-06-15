@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+	color: #EEEEEE;
+}
+
+h1{
+	font-size: 36px;
+	text-align: center;	
+}
+
+h2 {
+    font-size: 30px;
+	margin:10px;
+	color: #540061;
+}
+
+h3 {
+    font-size:25px;
+	margin:20px;
+	color: #5D5D5D;
+}
+
+h4 {
+    font-size: 20px;
+	margin:30px;
+	color: #FAF258;
+}
+
+p{
+	margin: 10px;
+	text-align: center;	
+}
+
+body{
+	background-image: url("../Imagem/Universo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.imagem{
+	margin: 50px;
+	max-width: 300px;
+	max-width: 100%;
+	border-radius: 25px;
+	display: block;
+}
+
+.especial{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 200px;
+	border-radius: 25px;	
+}
+
+.cabecalho{
+	background-color: #424242;
+    height:7vh;
+}
+
+.pagina{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    position: fixed;
+    bottom: 25px;
+    left: 1%;
+    width: 1%;
+    height: 1%;
+    text-decoration: none;
+	cursor: url("../Imagem/Bulbasaur.cur"), pointer;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    transition: margin-top 250ms;
+	color: #F5AAD8;
+}
+.btn:hover::after {
+    margin-top:-8px;
+	color: #F500FF;
+}
+
+.corpo{
+	width: 85%;
+    padding:1%;
+    display: inline-block;
+}
+
+.pagina a{
+	color: #666666;
+}
+
+.barra-lateral{
+	width:15%;
+    display:inline-block;
+}
+
+.barra-lateral ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 1%;
+}
+
+.barra-lateral li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #A7A6A6;
+    color: #000000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.barra-lateral li a {
+    color: #000000;
+    text-decoration: none;
+    width:100%;
+    display: block;
+}
+
+.barra-lateral li:hover {
+    background-color: #666666;
+}
+
+.cenoura{
+	cursor: url("../Imagem/BoloCenoura.cur"), auto;
+}
+
+.bulbasaur{
+	cursor: url("../Imagem/Bulbasaur.cur"), pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .barra-lateral{
+        width: 100%;
+        height: 100%;
+        padding:2%;
+    }
+
+    .corpo{
+        padding:2%;
+        width:100%;
+        display: inline-block;
+    }
+	
+	.imagem{
+		margin-left: auto;
+		margin-right: auto;
+		align-items: center;
+		text-align: center;
+	}
+}
